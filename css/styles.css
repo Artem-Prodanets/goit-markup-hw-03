@@ -7,12 +7,38 @@ body {
 
 ul { 
     list-style-type: none;
+    margin: 0;
+    padding-left: 0;
 }
 
 a {
     text-decoration: none;
 }
 
+img {
+    display: block;
+    max-width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+}
+
+.container {
+    max-width: 1128 px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+}
+
+
+/* ====================== HEADER ================== */
 .logo {
     color: #4D5AE5;
     font-family: "Raleway", sans-serif;
@@ -32,11 +58,22 @@ a {
     color: #F4F4FD;
 }
 
+.header {
+margin-top: 24px;
+margin-bottom: 24px;
+}
 
-/* .header-nav {} */
+.header-nav {
+    display: flex;
+    /* test rule */
+}
 
 
-/* .header-menu {} */
+.header-menu {
+    display: flex;
+    gap: 40px;
+    /* test rule */
+}
 
 /* .header-menu-item {} */
 
@@ -91,11 +128,11 @@ a {
 
 
 
-
-
-/* ===================================== section hero */
+/* ====================== HERO ================== */
 .hero {
     background-color: #2E2F42;
+    padding-top: 188px;
+    padding-bottom: 188px;
 }
 
 .hero-title {
@@ -105,16 +142,21 @@ a {
     letter-spacing: 0.02em;
     text-align: center;
     color: #fff;
+    margin: 0 auto;
+    max-width: 496px;
+    margin-bottom: 48px;
 }
 
 .btn {
-font-weight: 500;
+    font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.04em;
     color: #fff;
     background-color: #4D5AE5;
     cursor: pointer;
+    display: block;
+    margin: 0 auto;
 }
 
 .btn:hover {
@@ -135,12 +177,18 @@ font-weight: 500;
     background-color: #404BBF;
 }
 
-/* ==================================== section features */
-/* .features {} */
+
+
+/* ====================== FEATURES ================== */
+.features {
+    /* height: 344px; */
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
 
 .features-title {
     visibility: hidden;
-
+    
 }
 
 .features-list-title {
@@ -149,6 +197,7 @@ font-weight: 500;
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: #2e2f42;
+    margin-bottom: 8px;
 }
 
 .features-list-text {
@@ -159,10 +208,13 @@ font-weight: 500;
 }
 
 
-/* ===================================== section team */
+
+/* ====================== TEAM ================== */
 .team {
     background-color: #F4F4FD;
     text-transform: capitalize;
+    padding-top: 120px;
+    padding-bottom: 120px;
 }
 
 .team-title {
@@ -172,6 +224,12 @@ font-weight: 500;
     letter-spacing: 0.02em;
     text-align: center;
     color: #2e2f42;
+    padding-top: 120px;
+}
+
+.team-list {
+    padding-top: 72px;
+    padding-bottom: 120px;
 }
 
 .team-list-title {
@@ -180,6 +238,8 @@ font-weight: 500;
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: #2e2f42;
+    margin-top: 32px;
+    margin-bottom: 8px;
 }
 
 .team-list-text {
@@ -205,9 +265,12 @@ font-weight: 500;
 }
 
 
-/* =============================== portfolio */
+
+/* ====================== PORTFOLIO ================== */
 .portfolio {
     text-transform: capitalize;
+    padding-top: 120px;
+    padding-bottom: 120px;
 }
 
 .portfolio-title {
@@ -217,7 +280,11 @@ font-weight: 500;
     letter-spacing: 0.02em;
     text-align: center;
     color: #2e2f42;
+
 }
+
+/* .portfolio-item {
+} */
 
 .portfolio-list-title {
     font-weight: 500;
@@ -225,6 +292,8 @@ font-weight: 500;
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: #2e2f42;
+    margin-top: 32px;
+    padding-bottom: 8px;
 }
 
 .portfolio-list-text {
@@ -232,4 +301,16 @@ font-weight: 500;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #434455;
+}
+
+
+
+/* ====================== FOOTER ================== */
+.footer {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.footer-text {
+    max-width: 264px;
 }
