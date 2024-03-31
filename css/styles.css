@@ -32,8 +32,8 @@ p {
 
 .container {
     max-width: 1128 px;
-    padding-left: 156px;
-    padding-right: 156px;
+    padding-left: 15px;
+    padding-right: 15px;
     margin: 0 auto;
 }
 
@@ -50,6 +50,7 @@ p {
     color: #4d5ae5;
     display: flex;
     align-items: center;
+    margin-right: 76px;
 }
 
 .logo-header {
@@ -61,12 +62,13 @@ p {
 }
 
 .header {
-margin-top: 24px;
-margin-bottom: 24px;
+    border-bottom: 1px solid #E7E9FC;
 }
 
 .header-container{
     display: flex;
+    margin-top: 24px;
+    margin-bottom: 24px;
 }
 
 .header-nav {
@@ -75,14 +77,13 @@ margin-bottom: 24px;
     должны юзать  правило ниже: */
     /* address {
             margin-left: auto; */
+    align-items: center;
 }
 
 
 .header-menu {
     display: flex;
     gap: 40px;
-    margin-left: 76px;
-    align-items: center;
     /* test rule */
 }
 
@@ -178,6 +179,7 @@ margin-bottom: 24px;
     border: 0;
     border-radius: 4px;
     padding: 16px 32px;
+    min-width: 169px;
 }
 
 .btn:hover {
@@ -208,16 +210,28 @@ margin-bottom: 24px;
 }
 
 .features-list {
-display: flex;
+    display: flex;
+    gap: 24px;
 }
 
 .features-item {
     width: calc((100% - 3 * 24px) / 4);
 }
 
-.features-title {
+/* .features-title {
     visibility: hidden;
     
+} */
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
 }
 
 .features-list-title {
@@ -349,6 +363,11 @@ display: flex;
     background-color: #2E2F42;
     padding-top: 100px;
     padding-bottom: 100px;
+}
+
+.footer .logo {
+    display: inline-block;
+    margin-bottom: 16px;
 }
 
 .footer-text {
