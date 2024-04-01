@@ -69,6 +69,7 @@ p {
     display: flex;
     /* padding-top: 24px;
     padding-bottom: 24px; */
+    align-items: center;
 }
 
 .header-nav {
@@ -84,7 +85,6 @@ p {
 .header-menu {
     display: flex;
     gap: 40px;
-    /* test rule */
 }
 
 /* .header-menu-item {} */
@@ -97,7 +97,7 @@ p {
     color: #2e2f42;
             padding-top: 24px;
             padding-bottom: 24px;
-            /* display: block; */
+            display: block;
 }
 
 .header-menu-link:hover {
@@ -207,7 +207,6 @@ p {
 
 /* ====================== FEATURES ================== */
 .features {
-    /* height: 344px; */
     padding-top: 120px;
     padding-bottom: 120px;
 }
@@ -223,7 +222,7 @@ p {
 
 /* .features-title {
     visibility: hidden;
-    
+    вместо него начали юзать .visually-hidden
 } */
 
 .visually-hidden {
@@ -258,9 +257,6 @@ p {
 
 
 /* ====================== TEAM ================== */
-/* .rerere {
-    display: flex;
-} */
 
 .team {
     background-color: #F4F4FD;
@@ -302,8 +298,6 @@ p {
     color: #2e2f42;
     margin-bottom: 8px;
     text-align: center;
-    /* display: flex;
-    justify-content: center; */
 }
 
 .team-list-text {
@@ -312,8 +306,6 @@ p {
     letter-spacing: 0.02em;
     color: #434455;
     text-align: center;
-    /* display: flex;
-    justify-content: center; */
 }
 
 
